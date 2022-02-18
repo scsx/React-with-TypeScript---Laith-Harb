@@ -29,4 +29,15 @@ b {
     padding: 3rem;
     background-color: $red;
     color: white;
+
+    .list-group {
+        text-align: left;
+        margin: 0 auto;
+        width: 50%;
+
+        .list-group-item {
+            background-color: transparent;
+            color: white;
+        }
+    }
 }
