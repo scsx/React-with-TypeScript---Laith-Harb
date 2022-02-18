@@ -1,20 +1,17 @@
 import { useState } from 'react'
-import './App.css'
+import './App.scss'
 
 function App() {
+    const [number, setNumber] = useState<number | string>(5)
+
+    const changeNumber = () => {
+        setNumber('sjfn')
+    }
     return (
         <div className='App'>
+            <h1 className="text-center mb-4">Philosophers Party</h1>
             <header className='App-header'>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className='App-link'
-                    href='https://reactjs.org'
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                    Learn React
-                </a>
+                <div className='hero text-center'>Immanuel Kant</div>
             </header>
         </div>
     )

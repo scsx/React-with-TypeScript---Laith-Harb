@@ -1,0 +1,32 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;900&display=swap');
+
+$red: #ed2b02;
+
+@mixin sansserif {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    color: #333;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 400;
+    border: 2rem solid white;
+}
+
+h1,
+h2,
+h2,
+h4,
+h5,
+h6,
+b {
+    font-weight: 900;
+}
+
+.hero {
+    @include sansserif;
+    padding: 3rem;
+    background-color: $red;
+    color: white;
+}
