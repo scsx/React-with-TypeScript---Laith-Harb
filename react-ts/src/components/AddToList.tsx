@@ -26,20 +26,19 @@ const AddToList: React.FC<IProps> = (props) => {
 
     const handleClick = (): void => {
         if (!input.name || !input.quote) {
-            return
+            console.log('You didn\'t fill all fields')
         }
 
         props.propsSetPeople([
             ...props.propsPeople,
             {
-                name: input.name,
-                dob: 1723,
+                name: input.name || 'Ludwig Wittgenstein',
+                dob: +input.dob || 1889,
                 img: 'generic',
-                quote: input.quote
+                quote: input.quote || 'The real question of life after death isn\'t whether or not it exists, but even if it does what problem this really solves.'
             }
         ])
 
-        console.log(props.propsPeople)
         // Clear after
         setInput({
             name: '',
